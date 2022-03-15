@@ -17,6 +17,6 @@ RUN apk update \
  && echo "84f9f9bd23c71b248f295d894e41fb01  mule-standalone.tar.gz" | md5sum -c \
  && tar xvzf /opt/mule-standalone.tar.gz \
  && rm /opt/mule-standalone.tar.gz \
- && ln -s /opt/mule-standalone /opt/mule
+ && ln -s /opt/mule-standalone-4.4.0 /opt/mule
 
 CMD [ "/opt/mule/bin/mule" ]
